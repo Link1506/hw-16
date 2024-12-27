@@ -13,10 +13,6 @@ public class Author {
         this.surName = surName;
     }
 
-    @Override
-    public String toString() {
-        return "автор : " + firstName + " " + surName;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -32,6 +28,11 @@ public class Author {
 
     public void setSurName(String surName) {
         this.surName = surName;
+    }
+
+    @Override
+    public String toString() {
+        return "автор : " + firstName + " " + surName;
     }
 
     @Override
