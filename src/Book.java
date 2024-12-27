@@ -51,11 +51,11 @@ public class Book {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(author, book.author);
+        return Objects.equals(bookTitle, book.bookTitle) && Objects.equals(author, book.author);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(author);
+        return Objects.hash(bookTitle, author);
     }
 }
